@@ -1,0 +1,52 @@
+.administrationFormImagesContainer{
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.administrationFormImagesTextField input{
+    height: 0.5rem; 
+    width: 100%;
+}
+
+.administrationFormImagesTextField{
+    width: 100%;
+}
+
+.administrationFormImagesButtonAdd{
+    margin-left: 1rem;
+    height: 2.5rem;
+    color: #607D8B;
+    background-color: rgba(96, 125, 139, 0.1);;
+    border-radius: 10%;
+}
+
+.administrationFormImagesButtonDelete{
+    width: 100%;
+    color: #607D8B;
+    padding: 2rem;    
+}
+
+.administrationFormImagesButtonDelete button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.administrationFormImagesUrlList{
+    display: flex; 
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.administrationFormImagesUrlDelete{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}

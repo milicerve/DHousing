@@ -1,0 +1,33 @@
+.administrationFormCharactersBox{
+    margin-left: 2rem;
+}
+.administrationFormCharactersCheck{
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.8rem;
+    grid-auto-rows: minmax(0.5rem, auto);
+}
+.administrationFormCharactersCheckLabel span{
+    font-size: 0.9rem;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .administrationFormCharactersCheck{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .administrationFormCharactersCheckLabel{
+        font-size: 0.8rem;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .administrationFormCharactersCheck{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .administrationFormCharactersCheckLabel{
+        font-size: 0.8rem;
+    }
+}

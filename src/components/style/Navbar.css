@@ -1,0 +1,11 @@
+.loginButton:hover{
+    transform: translateY(-5%);
+}
+
+.MuiDrawer-paperAnchorRight{
+    width: 50% !important;
+}
+
+.navbarAvatar{
+    cursor: pointer;
+}

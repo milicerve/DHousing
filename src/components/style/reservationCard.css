@@ -1,0 +1,56 @@
+.reservationCardContainer{
+    margin-right: 2rem;
+    margin-top: 5rem;
+    max-width: 45rem;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 20px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 0px 0px rgb(0 0 0 / 12%);
+}
+
+.reservationCardMedia{
+    
+    transition: all 0.5s;
+}
+
+.reservationCardMedia:hover{
+    transform: scale(1.05);
+}
+
+.reservationCardName{
+    font-weight: bold;
+    color: #263238;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+.reservationCardCategory{
+    color: #607D8B;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.reservationCardLocation{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.5rem;
+    color: #263238;
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .reservationCardContainer{
+        margin: 1rem;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .reservationCardContainer{
+        margin: 1rem;
+    }
+}
+

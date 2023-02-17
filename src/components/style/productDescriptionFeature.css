@@ -1,0 +1,35 @@
+.superContainer{
+    margin-bottom: 0.5rem;
+}
+
+.descriptionContainer{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+}
+
+.listContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    grid-auto-rows: minmax(0.5rem, auto);
+}
+
+.hr{
+    color: #607D8B;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 820px) {
+    .descriptionContainer{
+        padding-right: 1.5rem;
+    }
+    .listContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

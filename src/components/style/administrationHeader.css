@@ -1,0 +1,56 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color:rgba(96, 125, 139, 0.1);
+}
+
+.administrationProductHeaderContainer{ 
+    display: flex;
+    justify-content: space-between;
+    background-color: #607D8B;
+    color: white;
+    margin-top: 101px;
+    width: 100%;
+}
+
+.administrationLeftContainer{ 
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.administrationRightContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+.administrationCreatProductTitle{
+    margin: 1rem;
+    margin-left: 2rem;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .administrationLeftContainerTyp{
+        font-size: 0.9rem;
+    }
+    .administrationCreatProductTitleTyp{
+        font-size: 0.9rem;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .administrationLeftContainerTyp{
+        font-size: 0.9rem;
+    }
+    .administrationCreatProductTitleTyp{
+        font-size: 0.9rem;
+    }
+}

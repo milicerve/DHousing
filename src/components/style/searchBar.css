@@ -1,0 +1,141 @@
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    max-width: 1024 px;
+    width: 75%;
+}
+
+.headerIcon{
+    color: lightgrey;
+
+}
+
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0rem 0.8rem;
+    width: 100%;
+    height: 50px;
+    margin: 0 0.2rem;
+    color: #263238;
+}
+
+.headerSearchItemButton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+    margin: 0 0.2rem;
+}
+
+.headerSearchInput{
+    border: none;
+    outline: none;
+}
+
+.headerSearchText{
+    color: lightgrey;
+}
+
+.date{
+    position: absolute;
+    top: 50px;
+}
+
+.options{
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem{
+    width: 200px;
+    display:flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black; 
+}
+
+.optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #febb02;
+    color: #febb02;
+    cursor: pointer;
+    background-color: white;
+}
+
+.rdrDateDisplayItemActive{
+    color: #febb02 !important;
+}
+
+.rdrSelected, .rdrInRange, .rdrStartEdge, .rdrEndEdge, .rdrDay{
+    color: #febb02 !important;
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+    background: #febb02 !important;
+}
+
+@media (max-width: 790px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 185px;
+        bottom: auto;
+        margin-top: 4.5rem;
+        width: 95%;
+    }
+    .headerSearchItem{
+        margin: 5px;
+        height: 50px;
+    }
+    .headerSearchItemButton{
+        margin: 5px;
+        width: 100%;
+    }
+    .headerSearchItemButton Button{
+        height: 40px;
+    }
+    .date{
+        position: absolute;
+        top: 120px;
+        z-index: 3;
+    }
+    .options{
+        position: absolute;
+        top: 110px;
+        z-index: 2;
+    }
+}
+@media (max-width: 250px) {
+    .header{
+        margin-top: 6rem; 
+    }
+}

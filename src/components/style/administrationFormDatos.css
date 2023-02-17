@@ -1,0 +1,44 @@
+.textfieldAdminstration input{
+    height: 0.5rem;
+}
+
+.textfieldAdminstrationDescription input{
+    height: 5rem;
+}
+
+.administrationFormDatosBox{
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.administrationFormDuoContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.administrationFormInput{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%
+}
+
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .administrationFormDuoContainer{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .administrationFormDuoContainer{
+        grid-template-columns: 1fr;
+    }
+
+}

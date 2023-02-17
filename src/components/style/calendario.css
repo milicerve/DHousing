@@ -1,0 +1,199 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.calendar{
+    background-color: rgba(96, 125, 139, 0.1);
+    padding: 2rem;
+    width: 100%;
+    font-family:'Roboto', sans-serif;
+    padding-bottom: 5rem;
+}
+
+.calendarBooking{
+    padding: 2rem;
+    width: 100%;
+    font-family:'Roboto', sans-serif;
+    padding-bottom: 5rem;
+    margin-bottom: 0;
+}
+
+.calendar-card-container{
+    border-radius: 10px;
+}
+
+.super-container-calendar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    gap: 20px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0px 14px 8px 0px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.calendar-container{
+    display: flex;
+    justify-content: center;
+    background: none;
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+}
+
+.react-calendar {
+    border: none !important;
+}
+
+.react-calendar__navigation button {
+    color: #607D8B;
+    background: none;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #f8f8fa;
+}
+.react-calendar__navigation button[disabled] {
+    background-color: #f0f0f0;
+}
+
+.btn-max-width{
+    width: 100%;
+}
+
+
+.react-calendar__month-view__days__day--neighboringMonth {
+    visibility: hidden;
+}
+
+.react-calendar__navigation button {
+    color: #607D8B;
+    min-width: 44px;
+    background: none;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+abbr[title] {
+    text-decoration: none;
+}
+
+.react-calendar__tile--active {
+    background: #FBC02D;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: #607D8B;
+    color: white;
+}
+
+.react-calendar__tile--range {
+    background: #FBC02D;
+    color: white;
+    border-radius: 0;
+}
+
+.react-calendar__tile--rangeStart {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: #FBC02D;
+    color: white;
+}
+
+.react-calendar__tile--rangeEnd {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #FBC02D;
+    color: white;
+
+}
+
+.react-calendar__month-view__days__day--weekend{
+    color: #607D8B;
+}
+
+.react-calendar__month-view__weekdays{
+    color: #607D8B
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
+        color: transparent;
+    }
+    .super-container-calendar{
+        display: flex;
+        flex-direction: column;
+    }
+    .calendarBooking{
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (min-width: 400px) and (max-width: 767px) {
+    .super-container-calendar{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: 120px;
+        background: none;
+        box-shadow: none;
+        
+    }
+    .calendarBooking{
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+    .super-container-calendar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calendar-container{
+        width: 90%;
+        height: 90%;
+    }
+    
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: 120px;
+        background: none;
+        box-shadow: none;
+    }
+}

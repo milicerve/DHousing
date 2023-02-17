@@ -1,0 +1,42 @@
+.superPoliticsContainerBooking{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.politicsContainerBooking{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.2rem;
+        grid-auto-rows: minmax(0.2rem, auto);
+        margin-bottom: 5rem;
+}
+
+.hr{
+    color: #607D8B;
+    margin-bottom: 1rem;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .superPoliticsContainerBooking{
+        padding-right: 1.5rem;
+    }
+    .politicsContainerBooking{
+        grid-template-columns: 2, 1fr;
+    }
+    .particularContainerBooking{
+        margin-top: 1rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .politicsContainerBooking{
+        grid-template-columns: 1fr;
+    }
+    .particularContainerBooking{
+        margin-top: 1rem;
+    }
+}

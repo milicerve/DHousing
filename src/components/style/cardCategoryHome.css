@@ -1,0 +1,39 @@
+.cardCategory{
+    width: 400px;
+    transition: all 0.5s;
+}
+
+.cardCategory:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.categoryTitle{
+    font-weight: bold;
+    color: #263238;
+    padding-left: 0.3rem;
+    padding-top: 0.1rem;
+    cursor: pointer;
+}
+
+.total{
+    color: #607D8B;
+    padding-left: 0.3rem;
+}
+
+.box{
+    margin-top: 250px
+}
+
+@media (max-width: 790px) {
+    .box{
+        margin-top: 350px;
+    }
+    .list{
+        margin-bottom: 0.5rem;
+    }
+    .searchCategoryContainer{
+        text-align: center;
+    }
+}
